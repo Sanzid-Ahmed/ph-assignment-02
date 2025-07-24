@@ -11,7 +11,7 @@ body{
 
 
 
-/* Header style */
+/* Header section style */
 header{
     max-width: 1140px;
     margin: 0 auto;
@@ -69,19 +69,28 @@ nav > img{
 }
 .banner-content-description{
     font-size: 1rem;
+    color: #00000050;
 }
 
 
 
+/* main section style */
 /* Plant style */
 .plant{
     max-width: 1140px;
     margin: 100px auto;
     text-align: center;
 }
+.plant-head{
+    font-size: 2.5rem;
+}
+.plant-head span{
+    color: #E95A08;
+}
 .plant-description{
     max-width: 888px;
     margin: 0 auto;
+    color: #00000050;
 }
 .plant-images{
     display: grid;
@@ -90,6 +99,35 @@ nav > img{
     row-gap: 30px;
     margin-top: 49px;
 }
+.plant-box{
+    width: 100%;
+    box-shadow: 0.1px 0.1px 1px 0.1px black;
+}
+.plant-box > img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.plant-box-description-name{
+    font-size: 1rem;
+    color: #111111;
+}
+.plant-box-description-money{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #111111;
+}
+.plant-box-description-btn{
+    width: 100%;
+    margin-top: 30px;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #E95A08;
+    border: none;
+}
+
+
 
 
 @media screen and (max-width: 480px){
@@ -129,5 +167,11 @@ nav > img{
 
 
 
-    /*  */
+    /* Plant */
+    .plant-images{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .plant-description{
+        max-width: 336px;
+    }
 }
