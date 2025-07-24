@@ -73,7 +73,23 @@ nav > img{
 
 
 
-
+/* Plant style */
+.plant{
+    max-width: 1140px;
+    margin: 100px auto;
+    text-align: center;
+}
+.plant-description{
+    max-width: 888px;
+    margin: 0 auto;
+}
+.plant-images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    margin-top: 49px;
+}
 
 
 @media screen and (max-width: 480px){
