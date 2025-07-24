@@ -126,10 +126,188 @@ nav > img{
     background-color: #E95A08;
     border: none;
 }
+/* Plants Lover style*/
+.Plants-Lover{
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.flower-store{
+    width: 47%;
+    height: auto;
+    position: relative;
+}
+.badge > img{
+    width: 10rem;
+    position: absolute;
+    /* border: 5px solid black; */
+    top: -70px;
+    right: -70px;
+}
+.flower-store-img{
+    width: 100%;
+}
+.lants-Lover-content{
+    width: 47%;
+}
+.lants-Lover-content-head{
+    font-size: 3rem;
+    color: #000000;
+}
+.lants-Lover-content-list > li{
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #00000050;
+}
+
+
+/* latest deals style*/
+.latest-deals{
+    margin-top: 50px;
+    text-align: center;
+}
+.latest-deals > h1 > span{
+    color: #E95A08;
+}
+.latest-deals h1{
+
+}
+.latest-deals p{
+    margin-top: 16px;
+    max-width: 888px;
+    margin: 0 auto;
+    color: #00000050;
+}
 
 
 
+/* Three image style */
+.three-common{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.three-img{
+    max-width: 1140px;
+    margin: 50px auto;
+    display: flex;
+    gap: 28px;
+    align-items: end;
+}
+.group-two{
+    width: 32.19%;
+}
+.one{
+    background-image: url("../assets/deal-bloom.png");
+    background-size: cover;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.two{
+    background-image: url("../assets/deal-ana.png");
+    background-size: cover;
+    border-radius: 22px;
+    width: 100%;
+    height: 12rem;
+}
+.three{
+    background-image: url("../assets/deal-zabo.png");
+    background-size: cover;
+    border-radius: 14px;
+    width: 66.05%;
+    height: 25.5rem;
+}
+.join{
+    background-image: url("../assets/news-letter-bg.png");
+    background-size: cover;
+    width: 100%;
+    min-height: 533px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.join-content{
+    width: 57.64%;
+    display: grid;
+    align-content: center;
+    row-gap: 23px;
+}
+.join-content h1{
+    margin: 0 auto;
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    color: #FFFFFF;
+}
+.input-button{
+    display: flex;
+    width: 100%;
+}
+.join-content input{
+    padding: 0.5em 2em;
+    width: 77.59%;
+    font-size: clamp(.5rem, 2vw, 1rem);
+}
+.join-content button{
+    padding: 1em 1em;
+    background-color: #E95A08;
+    border: none;
+    width: 22.4%;
+    font-size: clamp(.5rem, 2vw, 1rem);
+    color: #FFFFFF;
+}
 
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 40px auto;
+}
+.f-group-1{
+    width: 32%;
+}
+.f-group-1 img{
+    margin-top: 32px;
+    /* width: 37.5%; */
+    width: 132px;
+}
+.f-group-1 p{
+    color: #00000050;
+}
+.f-group-2{
+    display: flex;
+    flex-direction: column;
+}
+.f-group-2 a{
+    margin-top: 32px;
+    text-decoration: none;
+    color: #6B7280;
+}
+.f-group-3{
+    display: flex;
+    flex-direction: column;
+}
+.f-group-3 a{
+    margin-top: 32px;
+    text-decoration: none;
+    color: #6B7280;
+}
+.f-group-4{
+    margin-top: 32px;
+    display: flex;
+    gap: 24px;
+}
+.f-group-4 img{
+    width: 2rem;
+}
 @media screen and (max-width: 480px){
 
     /* Header*/
@@ -169,9 +347,73 @@ nav > img{
 
     /* Plant */
     .plant-images{
+        max-width: 361px;
+        margin: 30px auto;
         grid-template-columns: repeat(2, 1fr);
     }
     .plant-description{
         max-width: 336px;
+    }
+
+
+    /* Plants Lover*/
+    .Plants-Lover{
+        flex-direction: column;
+        max-width: 361px;
+        margin: 0 auto;
+    }
+
+    .flower-store{
+        width: 100%;
+    }
+    .lants-Lover-content{
+        width: 100%;
+    }
+    .lants-Lover-content-head{
+        font-size: 1.5rem;
+    }
+    .lants-Lover-content-list > li{
+        font-size: 0.8rem;
+    }
+    .badge > img{
+        display: none;
+    }
+
+
+    /* latest deals */
+    .latest-deals p{
+        max-width: 336px;
+    }
+
+
+    /* Three image */
+    .three-img{
+        flex-direction: column;
+        height: 36rem;
+    }
+    .group-two{
+        width: 100%;
+        height: 66.66%;
+    }
+    .two{
+        margin-top: 20px;
+    }
+    .one .two .three{
+        
+    }
+    .three{
+        margin-top: 20px;
+        width: 100%;
+        height: 33.33%;
+    }
+
+
+
+    .footer{
+        padding: 50px 20px;
+        flex-direction: column;
+    }
+    .f-group-1 img{
+        width: 180px;
     }
 }
