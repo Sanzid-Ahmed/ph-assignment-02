@@ -139,11 +139,11 @@ nav > img{
     position: relative;
 }
 .badge > img{
-    width: 10rem;
+    width: 35%;
     position: absolute;
     /* border: 5px solid black; */
-    top: -70px;
-    right: -70px;
+    top: -55px;
+    right: -55px;
 }
 .flower-store-img{
     width: 100%;
@@ -152,12 +152,12 @@ nav > img{
     width: 47%;
 }
 .lants-Lover-content-head{
-    font-size: 3rem;
     color: #000000;
+    font-size: clamp(.5rem, 5vw, 3rem);
 }
 .lants-Lover-content-list > li{
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: clamp(.5rem, 2vw, 1rem);
     color: #00000050;
 }
 
@@ -181,49 +181,53 @@ nav > img{
 }
 
 
-
-/* Three image style */
-.three-common{
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
+/* three image style */
 .three-img{
     max-width: 1140px;
     margin: 50px auto;
     display: flex;
-    gap: 28px;
-    align-items: end;
+    gap: 1.5em;
 }
 .group-two{
-    width: 32.19%;
-}
-.one{
-    background-image: url("../assets/deal-bloom.png");
-    background-size: cover;
-    border-radius: 14px;
-    margin-bottom: 25px;
-    width: 100%;
-    height: 12rem;
-    position: relative;
-}
-.two{
-    background-image: url("../assets/deal-ana.png");
-    background-size: cover;
-    border-radius: 22px;
-    width: 100%;
-    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 33.33%;
 }
 .three{
     background-image: url("../assets/deal-zabo.png");
     background-size: cover;
     border-radius: 14px;
-    width: 66.05%;
-    height: 25.5rem;
+    width: 66.66%;
 }
+.one{
+    background-image: url("../assets/deal-bloom.png");
+    background-size: cover;
+    border-radius: 14px;
+}
+.two{
+    background-image: url("../assets/deal-ana.png");
+    background-size: cover;
+    border-radius: 14px;
+}
+.three-common{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000040;
+    background-blend-mode: darken;
+    padding: 2.5em 1em;
+}
+.three-common a{
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+
+
+
+/* join from style */
 .join{
     background-image: url("../assets/news-letter-bg.png");
     background-size: cover;
@@ -265,6 +269,7 @@ nav > img{
 
 
 
+/* footer style */
 .footer{
     display: flex;
     justify-content: space-between;
@@ -308,6 +313,12 @@ nav > img{
 .f-group-4 img{
     width: 2rem;
 }
+
+
+
+
+
+
 @media screen and (max-width: 480px){
 
     /* Header*/
@@ -389,26 +400,25 @@ nav > img{
     /* Three image */
     .three-img{
         flex-direction: column;
-        height: 36rem;
     }
     .group-two{
         width: 100%;
-        height: 66.66%;
-    }
-    .two{
-        margin-top: 20px;
-    }
-    .one .two .three{
-        
     }
     .three{
-        margin-top: 20px;
         width: 100%;
-        height: 33.33%;
+    }
+    .one{
+        width: 100%;
+    }
+    .two{
+        width: 100%;
+    }
+    .three-common{
+        padding-left: 0;
+        padding-right: 0;
     }
 
-
-
+    /* footer */
     .footer{
         padding: 50px 20px;
         flex-direction: column;
