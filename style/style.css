@@ -424,7 +424,7 @@ nav > img{
     }
     .two{
         width: 100%;
-        
+        border-radius: 0; /*In group one post that 2 no picture not have border resious*/
     }
     
 
