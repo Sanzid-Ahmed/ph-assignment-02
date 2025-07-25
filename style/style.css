@@ -8,8 +8,14 @@
 body{
     margin: 0;
 }
-
-
+button:hover{
+    background-image: linear-gradient(to right, #3d1600, #E95A08) !important;
+}
+button:active{
+    background-color: rgb(71, 0, 0) !important;
+    background-image: none !important;
+    color: #FFFFFF !important;
+}
 
 /* Header section style */
 header{
