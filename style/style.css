@@ -411,6 +411,7 @@ nav > img{
     }  
     .three-img{
         flex-direction: column;
+        max-width: 361px;
     }
     .group-two{
         width: 100%;
