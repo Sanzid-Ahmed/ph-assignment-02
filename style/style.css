@@ -222,6 +222,7 @@ nav > img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: #00000040;
     background-blend-mode: darken;
     padding: 2.5em 1em;
